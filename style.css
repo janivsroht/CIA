@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: left;
+    z-index: 100;
+}
+
+.navbar {
+    padding: 10px;
+    position: absolute;
+    left: 800px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.nav-link {
+    font-size: 18px; 
+    font-weight: 500; 
+    font-family: 'Poppins', sans-serif; 
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease; 
+}
+
+.nav-link:hover {
+    color: white; 
+    background-color: #00abf0; 
+    border-radius: 20px; 
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:active {
+    color: #ffffff;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    padding: 600px;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    position: fixed;
+    left: 50px;
+    bottom: 350px;
+}
+
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+    position: fixed;
+    top: 300px;
+    left: 50px;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    right: 550px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover {
+    color: #081b29;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+}
+
+.home-sci a:hover:before {
+    width: 100%;
+}
+.janivimg{
+    position: fixed;
+    left: 70%;
+    top: 20%;
+    z-index: 2;
+    border-radius: 30px;
+
+
+}
+
